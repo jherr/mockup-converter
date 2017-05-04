@@ -43,6 +43,7 @@ export default () => (
     <button class="btn btn-large">Foo</button>
     <button class="btn btn-small">Foo</button>
     <button class="btn btn-mini">Foo</button>
+    <button class="btn btn-mini bar">Foo</button>
   </body>
 </html>`).jsx).to.eql(`
 <html>
@@ -50,6 +51,7 @@ export default () => (
     <Button size="lg">Foo</Button>
     <Button size="sm">Foo</Button>
     <Button size="mini">Foo</Button>
+    <Button size="mini" className="bar">Foo</Button>
   </body>
 </html>`);
   });
@@ -59,10 +61,12 @@ export default () => (
 <html>
   <body>
     <button class="btn disabled">Foo</button>
+    <button class="btn disabled">Foo</button>
   </body>
 </html>`).jsx).to.eql(`
 <html>
   <body>
+    <Button disabled>Foo</Button>
     <Button disabled>Foo</Button>
   </body>
 </html>`);

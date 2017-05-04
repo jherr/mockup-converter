@@ -39,8 +39,50 @@ $ cat mymockup.html | mockup-converter
 
 Which means you can do cool things like running it through the [FilterText](https://github.com/yhirose/vscode-filtertext) extension in VSCode.
 
-![Demo](./images/demo.gif)
+![Demo](images/demo.gif)
 
 # What does this handle?
 
 Currently the converter only handles `Button` and `ButtonGroup`. But more support is on the way.
+
+# Classname passthrough
+
+Any class name it doesn't recognize will be passed through, so:
+
+```html
+<div class="my-custom-class">Hey now!</div>
+```
+
+Becomes:
+
+```jsx
+<div className="my-custom-class">Hey now!</div>
+```
+
+And
+
+```html
+<button class="btn btn-large foo">OK!</button>
+```
+
+Becomes:
+
+```jsx
+<Button size="lg" className="foo">OK!</Button>
+```
+
+# Style handling
+
+Styles are also broken into their react versions automagically:
+
+```html
+<div style="margin-top: 50px;padding: 5px; line-height: 2em;">
+```
+
+Becomes:
+
+```jsx
+<div style={{marginTop: 50, padding: 5, lineHeight: '2em'}}>
+```
+
+Yeah... It does that too. So honestly, it's cool to use this even if you aren't using Bootstrap or reactstrap.

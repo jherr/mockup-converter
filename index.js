@@ -33,7 +33,10 @@ module.exports = (html, ruleSet = bootstrapRules) => {
 
   ruleSet.forEach(rule => rule($, imports));
 
-  const jsx = utils.fixClasses(utils.fixBooleanProps($.html()));
+  utils.fixStyles($);
+
+  let jsx = utils.fixProps($.html());
+  jsx = utils.fixClasses(jsx);
 
   const module = `
 import React from 'react';

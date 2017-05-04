@@ -14,9 +14,11 @@
   "author": "Jack Herrington <jack.herrington@nike.com>",
   "license": "MIT",
   "dependencies": {
+    "camelcase": "^4.1.0",
     "cheerio": "^0.22.0",
     "get-stdin": "^5.0.1",
-    "indent-string": "^3.1.0"
+    "indent-string": "^3.1.0",
+    "style-parser": "^1.1.1"
   },
   "devDependencies": {
     "chai": "^3.5.0",

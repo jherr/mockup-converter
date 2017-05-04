@@ -19,4 +19,18 @@ describe('translator', () => {
 </html>
 `);
   });
+
+  it('should parse styles', () => {
+    expect(translate(`
+<html>
+  <div style="margin-top: 50px;padding: 5px; line-height: 2em;">
+  </div>
+</html>
+`).jsx).to.equal(`
+<html>
+  <div style={{marginTop: 50, padding: 5, lineHeight: '2em'}}>
+  </div>
+</html>
+`);
+  });
 });
