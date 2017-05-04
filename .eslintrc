@@ -1,0 +1,16 @@
+{
+  "extends": "airbnb",
+  "rules": {
+    "import/no-extraneous-dependencies": ["error",
+      {
+        "devDependencies": ["**/*.test.js", "**/*.spec.js"],
+        "optionalDependencies": ["**/*.test.js", "**/*.spec.js"],
+        "peerDependencies": ["**/*.test.js", "**/*.spec.js"]
+      }
+    ],
+    "no-restricted-syntax": 0,
+    "guard-for-in": 0,
+    "no-useless-concat": 0,
+    "quotes": 0
+  }
+}
