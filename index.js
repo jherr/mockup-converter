@@ -33,7 +33,7 @@ module.exports = (html, ruleSet = bootstrapRules) => {
 
   ruleSet.forEach(rule => rule($, imports));
 
-  const jsx = utils.fixBooleanProps($.html());
+  const jsx = utils.fixClasses(utils.fixBooleanProps($.html()));
 
   const module = `
 import React from 'react';

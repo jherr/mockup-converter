@@ -8,31 +8,31 @@ module.exports = [
       utils.translateClassNames($(elem), {
         'btn-outline-primary': {
           color: 'primary',
-          outline: true
+          outline: true,
         },
         'btn-outline-info': {
           color: 'info',
-          outline: true
+          outline: true,
         },
         'btn-outline-success': {
           color: 'success',
-          outline: true
+          outline: true,
         },
         'btn-outline-warning': {
           color: 'warning',
-          outline: true
+          outline: true,
         },
         'btn-outline-danger': {
           color: 'danger',
-          outline: true
+          outline: true,
         },
         'btn-outline-inverse': {
           color: 'inverse',
-          outline: true
+          outline: true,
         },
         'btn-outline-link': {
           color: 'link',
-          outline: true
+          outline: true,
         },
         'btn-primary': {
           color: 'primary',
@@ -67,10 +67,10 @@ module.exports = [
         'btn-block': {
           block: true,
         },
-        'disabled': {
+        disabled: {
           disabled: true,
         },
-      })
+      });
       utils.removeClasses($(elem), [
         'btn',
       ]);
@@ -86,5 +86,5 @@ module.exports = [
       ]);
       utils.finalizeClasses($(elem));
     });
-  }
+  },
 ];

@@ -33,4 +33,8 @@ module.exports = {
   fixBooleanProps(jsxString) {
     return jsxString.replace(new RegExp(`="${constants.BooleanProperty}"`), '');
   },
+
+  fixClasses(jsxString) {
+    return jsxString.replace(/\s+class=/, ' className=');
+  },
 };

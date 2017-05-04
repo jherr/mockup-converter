@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha --recursive && istanbul cover _mocha -- --recursive && npm run lint",
-    "lint": "eslint index.js src/**/*.js test/**/*.js"
+    "lint": "eslint index.js rules/**/*.js src/**/*.js test/**/*.js",
+    "lint-fix": "eslint --fix index.js rules/**/*.js src/**/*.js test/**/*.js"
   },
   "bin": {
     "mockup-converter": "./bin/mockup-converter.js"
