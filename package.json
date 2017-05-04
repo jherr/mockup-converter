@@ -1,6 +1,6 @@
 {
   "name": "mockup-converter",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Converts HTML mockups into component library using React components",
   "main": "index.js",
   "scripts": {
@@ -11,6 +11,7 @@
   "bin": {
     "mockup-converter": "./bin/mockup-converter.js"
   },
+  "repository": "https://github.com/jherr/mockup-converter",
   "author": "Jack Herrington <jack.herrington@nike.com>",
   "license": "MIT",
   "dependencies": {
