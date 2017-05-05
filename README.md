@@ -43,7 +43,7 @@ Which means you can do cool things like running it through the [FilterText](http
 
 # What does this handle?
 
-Currently the converter only handles `Button` and `ButtonGroup`. But more support is on the way.
+Most of the bootstrap classes are mapped. A few big things, like Media and Carousel aren't in there. But what's in there will get you far down the road really quickly.
 
 # Classname passthrough
 
