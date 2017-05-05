@@ -1,6 +1,6 @@
 {
   "name": "mockup-converter",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Converts HTML mockups into component library using React components",
   "main": "index.js",
   "scripts": {
